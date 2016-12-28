@@ -5,6 +5,7 @@
 	<meta charset="utf-8" />
 	<meta name="keywords" content="旅行,行旅" />
 	<meta name="description" content="国内旅游，出国游" />
+	<link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
 	<script type="text/javascript" src="./js/commen/require.js" data-main="./js/main.js"></script>
 	<script type="text/javascript" src="./js/commen/3.1.0jquery.js"></script>
 	<link rel="stylesheet" type="text/css" href="./css/currency.css" />
@@ -23,26 +24,26 @@
 			<div class="nav-bar">
 				<ul class="language">
         					<li>
-        						<a href="./index.html" class="selected" id="cui_lang_cn">
+        						<a href="./index.html" class="selected" id="cui_lang_cn" onmouseover="this.className= 'selected language_current';document.getElementById('cui_lang_list').parentNode.style.display='block';" onmouseout="this.className= 'selected';document.getElementById('cui_lang_list').parentNode.style.display='none'";>
         							<span>
         								<em class="ico-global"></em>Global Sites<b class="arrow"></b>
 							</span>
         						</a>
-        						<div class="language_wrap drowndrop" style="display: none;">
+        						<div class="language_wrap drowndrop" onmouseover="document.getElementById('cui_lang_cn').className= 'selected language_current';this.style.display='block';" onmouseout="document.getElementById('cui_lang_cn').className= 'selected';this.style.display='none';" style="display: none;">
             							<ul class="language_list" id="cui_lang_list">
-							              <li class="first"><a id="ctrip_hk" class="language_hk" href="http://www.ctrip.com.hk#from=click_hk">香港（繁体）</a></li>
-							              <li><a id="ctrip_hk_en" class="language_hk" href="http://www.ctrip.com.hk/#from=click_hken">Hong Kong(English)</a></li>
-							              <li><a id="ctrip_eng" class="language_en" href="http://english.ctrip.com/#from=click_en">English</a></li>
-							              <li><a id="ctrip_jap" class="language_jap" href="http://jp.ctrip.com/#from=click_jp">日语版</a></li>
-							              <li><a id="ctrip_korea" class="language_korea" href="http://www.ctrip.co.kr/#from=click_kr">韩语版</a></li>
-							              <li><a id="ctrip_sg" class="language_sg" href="http://www.ctrip.sg/#from=click_sg">Singapore</a></li>
-							              <li><a id="ctrip_id" class="language_id" href="http://www.ctrip.co.id/#from=click_id">Bahasa Indonesia</a></li>
-							              <li><a id="ctrip_my" class="language_my" href="http://www.ctrip.my/#from=click_my">Bahasa Malaysia</a></li>
-							              <li><a id="ctrip_th" class="language_th" href="http://www.ctrip.co.th/#from=click_th">&#xE20;&#xE32;&#xE29;&#xE32;&#xE44;&#xE17;&#xE22;</a></li>
-							              <li><a id="ctrip_fr" class="language_fr" href="http://fr.ctrip.com/#from=click_fr">Fran&#xE7;ais</a></li>
-							              <li><a id="ctrip_de" class="language_de" href="http://de.ctrip.com/#from=click_de">Deutsch</a></li>
-							              <li><a id="ctrip_es" class="language_es" href="http://es.ctrip.com/#from=click_es">Espa&#xF1;ol</a></li>
-							              <li class="last"><a id="ctrip_ru" class="language_ru" href="http://ru.ctrip.com/#from=click_ru">Русский</a></li>
+							              <li class="first"><a id="ctrip_hk" class="language_hk" href="">香港（繁体）</a></li>
+							              <li><a id="ctrip_hk_en" class="language_hk" href="">Hong Kong(English)</a></li>
+							              <li><a id="ctrip_eng" class="language_en" href="" >English</a></li>
+							              <li><a id="ctrip_jap" class="language_jap" href="" >日语版</a></li>
+							              <li><a id="ctrip_korea" class="language_korea" href="">韩语版</a></li>
+							              <li><a id="ctrip_sg" class="language_sg" href="" >Singapore</a></li>
+							              <li><a id="ctrip_id" class="language_id" href="" >Bahasa Indonesia</a></li>
+							              <li><a id="ctrip_my" class="language_my" href="" >Bahasa Malaysia</a></li>
+							              <li><a id="ctrip_th" class="language_th" href="" >&#xE20;&#xE32;&#xE29;&#xE32;&#xE44;&#xE17;&#xE22;</a></li>
+							              <li><a id="ctrip_fr" class="language_fr" href="" >Fran&#xE7;ais</a></li>
+							              <li><a id="ctrip_de" class="language_de" href="" >Deutsch</a></li>
+							              <li><a id="ctrip_es" class="language_es" href="" >Espa&#xF1;ol</a></li>
+							              <li class="last"><a id="ctrip_ru" class="language_ru" href="" >Русский</a></li>
 						            </ul>
 					          </div>
 				        	</li>
@@ -52,15 +53,18 @@
       				</ul>
 			      	<ul class="cui_service service_1180">
 				        	<li id="cui_service_cn">
-				        		<a href="#" class="service_tel" >
-				        			<span title="免境内长话费">国内：<em class="service_telnum">400-830-6666</em>
-				        				<b class="arrow"></b>
-			        				</span>
-		        				</a>
-		        				<div class="service_wrap drowndrop" >
-				            			<ul class="service_list">
+				        		
+							
+						<a href="#" class="service_tel" onmouseover="this.className= 'service_tel service_current';document.getElementById('cui_service_cn').children[1].style.display='block';" onmouseout="this.className= 'service_tel';document.getElementById('cui_service_cn').children[1].style.display='none';">
+							<span title="免境内长话费">国内：<em class="service_telnum">400-830-6666</em><b class="arrow"></b>
+							</span>
+						</a>
+
+						<div class="service_wrap drowndrop" onmouseover="document.getElementById('cui_service_cn').children[0].className= 'service_tel service_current';this.style.display='block';" onmouseout="document.getElementById('cui_service_cn').children[0].className= 'service_tel';this.style.display='none';">
+				            			<ul class="service_list" id="cui_serv_list">
 				              				<li>
 							                <dl>
+							                <dd><span style="color:#999">（或）</span><em>400-820-6666</em></dd>
 							                  <dd>香港：<em>+852-3069-9966</em></dd>
 							                  <dd>海外：<em>+86-21-3406-4888</em></dd>
 							                </dl>
@@ -71,9 +75,9 @@
 			     	</ul>
 				<ul class="cui_wireless" id="head_float_level">
 				        	<li>
-				        		<a href="./app.html" class="wireless wireless_link" target="_blank" rel="nofollow" id="linkid"><i class="cui_ico_app"></i>
+				        		<a href="./app.html" class="wireless wireless_link" target="_blank" rel="nofollow" id="linkid" onmouseover="this.className= 'wireless wireless_link active';document.getElementById('head_float_level').children[0].children[1].style.display='block';" onmouseout="this.className= 'wireless wireless_link';document.getElementById('head_float_level').children[0].children[1].style.display='none';"><i class="cui_ico_app"></i>
 				        		</a>
-				        		<div id="head_float_box_app" class="cui_wireless_box" style="display: none;">
+				        		<div id="head_float_box_app" class="cui_wireless_box" style="display: none;" onmouseover="document.getElementById('head_float_level').children[0].children[0].className= 'wireless wireless_link active';this.style.display='block';" onmouseout="document.getElementById('head_float_level').children[0].children[0].className= 'wireless wireless_link';this.style.display='none';" >
 				        			<i class="cui_ico_chatarrow" style="right:40px;"></i>
 				        			<div class="cui_wireless_inbox">
 				              				<dl class="cui_wireless_type">
@@ -86,12 +90,12 @@
 				          		</div>
 				       	 </li>
 					<li>
-						<a href="##" class="wireless wireless_nolink" id="nolinkid"><i class="cui_ico_wechat"></i></a>
-						<div id="head_float_box_weixin" class="cui_wireless_box" style="display: none;">
+						<a href="##" class="wireless wireless_nolink" id="nolinkid" onmouseover="this.className= 'wireless wireless_nolink active';document.getElementById('head_float_level').children[1].children[1].style.display='block';" onmouseout="this.className= 'wireless wireless_nolink';document.getElementById('head_float_level').children[1].children[1].style.display='none';"><i class="cui_ico_wechat"></i></a>
+						<div id="head_float_box_weixin" class="cui_wireless_box" style="display: none;" onmouseover="document.getElementById('head_float_level').children[1].children[0].className= 'wireless wireless_nolink active';this.style.display='block';" onmouseout="document.getElementById('head_float_level').children[1].children[0].className= 'wireless wireless_nolink';this.style.display='none';">
 							<i class="cui_ico_chatarrow"></i>
 							<div class="cui_wireless_inbox">
 									<dl class="cui_wireless_type">
-										<dt>行旅订阅号:helloCopyctrip</dt>
+										<dt>行旅订阅号:hellozTravel</dt>
 									<dd></dd>
 									 	</dl>
 							 	扫一扫,领旅行福利

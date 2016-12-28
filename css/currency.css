@@ -1,1 +1,516 @@
+html, body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td, em, button {
+    margin: 0;
+    padding: 0;
+}
+.cui_hd_cont {
+    background: #fff;
+}
+.cui_hd {
+    position: relative;
+    z-index: 26;
+    min-width: 980px;
+    max-width: 1180px;
+    height: 65px;
+    margin: 0 auto;
+}
+.cui_hd .ctriplogo {
+    position: relative;
+    z-index: 10;
+    display: inline-block;
+    width: 126px;
+    height: 43px;
+    margin: 11px 0;
+    overflow: hidden;
+}
+.cui_hd .ctriplogo a {
+    display: block;
+    width: 126px;
+    height: 43px;
+    background: url(../staticResource/pic/titlesmall.png) no-repeat;
+    text-indent: -999px;
+    overflow: hidden;
+}
 
+.cui_hd .cui_search {
+    position: absolute;
+    top: 18px;
+    left: 170px;
+    z-index: 100;
+    width: 28%;
+    font-family: "Microsoft Yahei", Tahoma;
+}
+.cui_hd .cui_search input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 28px;
+    padding: 0 45px 0 5px;
+    line-height: 28px \9;
+    font-size: 12px;
+    font-family: "Microsoft Yahei", Tahoma;
+    border: 1px solid #C2C2C2;
+    box-shadow: 2px 2px 1px 0 rgba(224, 226, 230, 0.3) inset;
+    outline: 0 none;
+    border-radius: 4px;
+}
+.cui_hd .cui_search input:focus {
+    border-color: #171717;
+    box-shadow: 1px 1px 0 0 rgb(182, 182, 182) inset;
+}
+.cui_search button{
+    background-image: url(../staticResource/pic/button.png);
+    background-repeat: no-repeat;
+}
+.cui_hd .cui_search button {
+    position: absolute;
+    top: 1px;
+    right: -51px;
+    width: 42px;
+    height: 28px;
+    cursor: pointer;
+    border: 0 none;
+    background-color: #C2C2C2;
+    background-position: -52px -603px;
+    border-radius: 0;
+}
+
+.cui_hd .cui_search button:hover, .cui_hd .cui_search input:focus + button:hover {
+    background-color: #848484;
+    background-position: -52px -653px;
+}
+
+.cui_hd .cui_search input:focus + button {
+    background-color: #171717;
+    background-position: -52px -628px;
+}
+
+
+
+.cui_hd ul, .cui_hd ul li, #base_ft ul {
+    list-style: none;
+}
+
+.cui_hd .nav-bar {
+    position: absolute;
+    right: 0;
+    top: 0;
+    _width: 465px;
+    font-family: Arial, tahoma, verdana, "Microsoft YaHei", Simsun, sans-serif;
+    color: #4c4c4c;
+    font-size: 12px;
+}
+.cui_hd .nav-bar, .cui_hd .nav-bar a {
+    color: #4c4c4c;
+}
+.cui_hd .nav-bar .language, .cui_hd .nav-bar .cui_service, .cui_hd .nav-bar .cui_wireless {
+    float: left;
+    height: 15px;
+    line-height: 15px;
+    padding: 0 10px;
+    margin: 23px 0 0 0;
+    border-right: 1px solid #b2b2b2;
+}
+
+.cui_hd .language li {
+    position: relative;
+    z-index: 31;
+}
+.cui_hd .language li .selected, .cui_hd .cui_service li .service_tel {
+    display: inline-block;
+    padding: 3px 3px 0 3px;
+    margin-top: -10px;
+    color: #4c4c4c;
+    font-size: 12px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    -moz-border-top-left-radius: 3px;
+    -moz-border-top-right-radius: 3px;
+}
+.cui_hd .language li .selected span, .cui_hd .cui_service li .service_tel span {
+    position: relative;
+    z-index: 112;
+    display: inline-block;
+    padding: 6px 5px 6px 9px;
+    *padding: 6px 5px 3px 9px;
+    margin: 1px 1px -2px;
+}
+.cui_hd .language li .selected em.ico-langen, .cui_hd .language li .selected em.ico-langgb, .cui_hd .language li .ico-global, .cui_hd .language li .selected em.ico-langhant {
+    display: inline-block;
+    width: 19px;
+    height: 13px;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+.cui_hd .language li .ico-global {
+    margin-top: -2px;
+    height: 16px;
+    background-position: -64px 0;
+}
+.cui_hd .language b.arrow, .cui_hd .cui_service b.arrow {
+    display: inline-block;
+    width: 9px;
+    height: 5px;
+    vertical-align: middle;
+    margin-left: 5px;
+    overflow: hidden;
+    background-position: -63px -260px;
+}
+
+.cui_hd .language_list a, .cui_hd .ico-langen, .cui_hd .ico-langgb, .cui_hd .ico-global, .cui_hd .ico-langhant, .cui_hd .cui_tel b, .cui_hd .myctrip b.arrow, .cui_hd .cui_myctrip, .cui_hd .cui_weibo, .cui_hd .cui_lang b, .cui_hd .cui_lang_hover b, #cui_lang_bottom a, .cui_myctrip_log .badge, .cui_myctrip_log .myctrip a b.arrow, .cui_ico_app, .cui_ico_chatarrow, .cui_ico_wechat, .cui_ico_tips, .cui_search button, .cui_hd .language b.arrow, .cui_service b.arrow {
+    background-image: url(../staticResource/pic/button.png);
+    background-repeat: no-repeat;
+}
+.cui_hd .drowndrop, .cui_nav .drowndrop {
+    display: none;
+    position: absolute;
+    z-index: 10;
+    top: 22px;
+    right: 0;
+    background: #fff;
+}
+.cui_hd .cui_wireless_box, .cui_hd .language_wrap, .cui_hd .service_wrap {
+    top: 17px;
+    *top: 14px;
+    left: 0;
+    right: auto;
+    height: auto;
+    background: #e4e7eb;
+    padding: 3px;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    border-top-right-radius: 3px;
+    -moz-border-bottom-left-radius: 3px;
+    -moz-border-bottom-right-radius: 3px;
+    -moz-border-top-right-radius: 3px;
+}
+
+.cui_hd .language_list {
+    border: 1px solid #b8b8b8;
+    background: #fff;
+    padding: 0 10px 0 0;
+    margin: 0;
+    width: 148px;
+}
+.cui_hd .language_list li.first {
+    border-top: 1px dotted #e4e7eb;
+    *float: left;
+    _margin-left: 4px;
+}
+.cui_hd .language_list li {
+    width: 140px;
+    margin: 0 9px;
+    line-height: 20px;
+    height: 20px;
+    padding: 4px 0;
+    border-bottom: 1px dotted #e4e7eb;
+}
+.cui_hd .language li {
+    position: relative;
+    z-index: 31;
+}
+.cui_hd .language li .language_current, .cui_hd .cui_service li .service_current, .cui_hd .language li .selected:hover, .cui_hd .cui_service li .service_tel:hover {
+    background: #e4e7eb;
+    text-decoration: none;
+    cursor: pointer;
+    color: #4c4c4c;
+    font-size: 12px;
+}
+
+.cui_hd .language a:hover b.arrow, .cui_hd .language_current b.arrow {
+    background-position: -0px -260px;
+}
+
+
+.cui_hd .language_list li.last {
+    border-bottom: none;
+}
+
+.cui_hd .language_list li a.language_hk, .cui_hd .language_list li a.language_big5, .cui_hd .language_list li a.language_gb, .cui_hd .language_list li a.language_en, .cui_hd .language_list li a.language_es, .cui_hd .language_list li a.language_de, .cui_hd .language_list li a.language_fr, .cui_hd .language_list li a.language_sg, .cui_hd .language_list li a.language_id, .cui_hd .language_list li a.language_my {
+    font: 12px/20px "Microsoft yahei", tahoma, arial, sans-serif;
+    color: #4c4c4c;
+    height: 20px;
+    padding-top: 0;
+}
+.cui_hd .language li .language_current span, .cui_hd .cui_service li .service_current span, .cui_hd .language li .selected:hover span, .cui_hd .cui_service li .service_tel:hover span {
+    background-color: #fff;
+    border: 1px solid #b8b8b8;
+    border-bottom: none;
+    margin: 0px;
+}
+.cui_hd .language_list li a {
+    font-family: Arial, tahoma, verdana, "Microsoft YaHei", Simsun, sans-serif;
+    white-space: nowrap;
+    display: block;
+    padding-left: 25px;
+    color: #4c4c4c;
+    height: 0;
+    padding-top: 20px;
+    line-height: 20px;
+    overflow: hidden;
+}
+.cui_hd .language_hk {
+    background-position: 0 -315px;
+    line-height: 22px;
+}
+.cui_hd .language_en {
+    background-position: -61px -467px;
+}
+.cui_hd .language_jap {
+    background-position: 0 -430px;
+}
+.cui_hd .language_korea {
+    background-position: 0 -449px;
+}
+.cui_hd .language_sg {
+    background-position: 0px -392px;
+}
+.cui_hd .language_id {
+    background-position: 0px -373px;
+}
+.cui_hd .language_my {
+    background-position: 0px -353px;
+}
+.cui_hd .language_th {
+    background-position: 0px -335px;
+}
+.cui_hd .language_fr {
+    background-position: -61px -503px;
+}
+.cui_hd .language_de {
+    background-position: -61px -485px;
+}
+.cui_hd .language_es {
+    background-position: -61px -520px;
+}
+.cui_hd .language_ru {
+    background-position: 0 -35px;
+}
+
+.cui_hd a, .cui_nav a, #base_ft a {
+    text-decoration: none;
+}
+.cui_hd a:hover, .cui_nav a:hover, #base_ft a:hover {
+    text-decoration: underline;
+}
+
+
+.cui_hd .nav-bar ul.service_1180 {
+    border-right: none;
+    padding-right: 0;
+}
+.cui_hd .cui_service li {
+    position: relative;
+    z-index: 30;
+}
+.cui_hd .cui_service li a {
+    color: #4c4c4c;
+    font-size: 12px;
+}
+.cui_hd .cui_service li .service_tel {
+    margin-left: -9px;
+    color: #4c4c4c;
+    font-size: 12px;
+}
+.cui_hd .cui_service li .service_tel span {
+    padding-left: 5px;
+}
+.cui_hd .service_telnum {
+    
+    font-style: normal;
+}
+
+.cui_hd .language li .language_current, .cui_hd .cui_service li .service_current, .cui_hd .language li .selected:hover, .cui_hd .cui_service li .service_tel:hover {
+    background: #e4e7eb;
+    text-decoration: none;
+    cursor: pointer;
+    color: #4c4c4c;
+    font-size: 12px;
+}
+.cui_hd .language li .language_current span, .cui_hd .cui_service li .service_current span, .cui_hd .language li .selected:hover span, .cui_hd .cui_service li .service_tel:hover span {
+    background-color: #fff;
+    border: 1px solid #b8b8b8;
+    border-bottom: none;
+    margin: 0px;
+}
+.cui_hd .cui_service a:hover b.arrow, .cui_hd .service_current b.arrow {
+    background-position: -0px -260px;
+}
+.cui_hd .service_wrap {
+    right: 0;
+    left: auto;
+    +right: -9px;
+}
+.cui_hd .service_list {
+    min-width: 158px;
+    padding: 0px 15px 3px 15px;
+    margin: 0;
+    border: solid 1px #b8b8b8;
+    background: #fff;
+}
+.cui_hd .service_list li dl {
+    margin: 0;
+    padding: 0;
+    line-height: 20px;
+    margin-top: 2px;
+    *margin-top: -5px;
+}
+.cui_hd .service_list li dd {
+    margin: 0;
+    padding: 0;
+    text-align: right;
+    line-height: 23px;
+    white-space: nowrap;
+}
+.cui_hd .nav-bar .cui_wireless {
+    border-right: none;
+    padding: 0;
+    margin-left: 13px;
+}
+.cui_hd .nav-bar .cui_wireless li {
+    float: left;
+    margin-right: 7px;
+}
+.cui_hd .cui_wireless li {
+    display: block;
+    width: 20px;
+    height: auto;
+}
+
+
+.cui_hd .nav-bar .cui_wireless a.wireless_link {
+    cursor: pointer;
+}
+.cui_hd .nav-bar, .cui_hd .nav-bar a {
+    color: #4c4c4c;
+}
+.cui_hd a:hover, .cui_nav a:hover, #base_ft a:hover {
+    text-decoration: underline;
+}
+.cui_wireless .wireless, .cui_wireless_type dt, .cui_wireless_msg i, .cui_wireless_code, .cui_link_app i, .cui_input_close {
+    background: url(../staticResource/pic/button.png) 0 -9999em no-repeat;
+}
+.cui_ico_app {
+    height: 17px;
+    background-position: 0 -56px;
+}
+.cui_ico_app, .cui_ico_wechat, .cui_ico_wechat2 {
+    display: inline-block;
+    width: 20px;
+}
+.active .cui_ico_app, .active .cui_ico_app:hover, .cui_ico_app:hover {
+    background-position: 0 -78px;
+}
+
+.cui_hd .cui_wireless_box {
+    display: none;
+    position: absolute;
+    right: 0;
+    left: auto;
+    top: 46px;
+    width: 156px;
+    height: 218px;
+    z-index: 100;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    text-align: center;
+}
+.cui_hd .cui_wireless_box .cui_ico_chatarrow {
+    position: absolute;
+    z-index: 9;
+    right: 8px;
+    top: -5px;
+}
+.cui_ico_chatarrow {
+    width: 13px;
+    height: 9px;
+    background-position: 0 -271px;
+}
+.cui_hd .language_list a, .cui_hd .ico-langen, .cui_hd .ico-langgb, .cui_hd .ico-global, .cui_hd .ico-langhant, .cui_hd .cui_tel b, .cui_hd .myctrip b.arrow, .cui_hd .cui_myctrip, .cui_hd .cui_weibo, .cui_hd .cui_lang b, .cui_hd .cui_lang_hover b, #cui_lang_bottom a, .cui_myctrip_log .badge, .cui_myctrip_log .myctrip a b.arrow, .cui_ico_app, .cui_ico_chatarrow, .cui_ico_wechat, .cui_ico_tips, .cui_search button, .cui_hd .language b.arrow, .cui_service b.arrow {
+    background-image: url(../staticResource/pic/button.png);
+    background-repeat: no-repeat;
+}
+.cui_hd .cui_wireless_inbox {
+    position: relative;
+    width: 154px;
+    height: 216px;
+    border: 1px solid #b8b8b8;
+    background-color: #fff;
+    cursor: default;
+}
+.cui_hd .cui_wireless_type {
+    margin: 18px 0 0;
+    *zoom: 1;
+    text-align: center;
+}
+.cui_hd .cui_wireless_type dt {
+    margin-bottom: 15px;
+    color: #3882e5;
+    text-align: center;
+}
+.cui_wireless .wireless, .cui_wireless_type dt, .cui_wireless_msg i, .cui_wireless_code, .cui_link_app i, .cui_input_close {
+    background: url(../staticResource/pic/erweima.png) 0 -9999em no-repeat;
+}
+.cui_hd .cui_wireless_type dd {
+    margin: 0 auto 18px;
+    text-align: center;
+}
+.cui_hd .cui_wireless_type::after {
+    content: '\0020';
+    display: block;
+    clear: both;
+    height: 0;
+    overflow: hidden;
+}
+.cui_hd .cui_link_app {
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 38px;
+    line-height: 38px;
+    background-color: #f0f0f0;
+    color: #666;
+    text-align: center;
+}
+.cui_hd .cui_link_app i {
+    display: inline-block;
+    margin-left: 5px;
+    font-family: 'Simsun';
+    font-style: normal;
+}
+.cui_wireless .wireless, .cui_wireless_type dt, .cui_wireless_msg i, .cui_wireless_code, .cui_link_app i, .cui_input_close {
+    background: url(../staticResource/pic/erweima.png) 0 -9999em no-repeat;
+}
+.cui_hd .nav-bar, .cui_hd .nav-bar a {
+    color: #4c4c4c;
+}
+.cui_hd .cui_link_app {
+    line-height: 38px;
+    color: #666;
+    text-align: center;
+}
+
+.cui_hd .nav-bar .cui_wireless a.wireless_nolink {
+    cursor: default;
+    position: relative;
+}
+.cui_ico_wechat {
+    height: 17px;
+    background-position: -20px -55px;
+    margin-top: 0;
+}
+.cui_ico_app, .cui_ico_wechat, .cui_ico_wechat2 {
+    display: inline-block;
+    width: 20px;
+}
+.cui_ico_wechat {
+    height: 17px;
+    background-position: -20px -55px;
+    margin-top: 0;
+}
+.cui_ico_app, .cui_ico_wechat, .cui_ico_wechat2 {
+    display: inline-block;
+    width: 20px;
+}
