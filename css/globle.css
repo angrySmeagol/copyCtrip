@@ -17,11 +17,11 @@
     }
 }
 #appDownDiv i,#langDownDiv ul li a,#weixinDownDiv>i{
-	background-image: url(./staticResource/pic/button-ctrip.png);
+	background-image: url(../staticResource/pic/button-ctrip.png);
     	background-repeat: no-repeat;
 }
 #appDownDiv>div div,#appDownDiv>div a i,#weixinDownDiv>div div{
-	background-image: url(./staticResource/pic/erweima.png);
+	background-image: url(../staticResource/pic/erweima.png);
     	background-repeat: no-repeat;
 }
 
