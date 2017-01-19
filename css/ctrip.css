@@ -1,0 +1,545 @@
+.header{
+	height: 65px;
+}
+.header>div{
+	position: relative;
+	top: 50%;
+	bottom: 50%;
+	transform: translate(0,-50%);
+}
+
+
+
+
+
+
+
+.headTitle{
+	display: block;
+	width: 126px;
+	height: 43px;
+	background-image: url(/staticResource/pic/titlesmall.png);
+	background-repeat: no-repeat;
+}
+
+.globalSearch+span,.language>a::before{
+	background-image: url(/staticResource/pic/button-ctrip.png) ;
+ 	background-repeat: no-repeat;
+}
+
+
+
+
+.searchBox{
+	width: 100%;
+	height: 100%;
+}
+ .globalSearch{
+ 	border-right: 0px;
+ }
+ .globalSearch+span{
+ 	
+ 	background-color: #a4cbff;
+	background-position: -52px -603px;
+ 	width: 42px;
+ 	border-width: 1px 1px 1px 0;
+ 	border-color: #ccc;
+ 	border-style: solid;
+	border-radius:0 4px 4px 0;
+	-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+	box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+	-webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+	-o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+	transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+ }
+ 
+ .globalSearch:focus+span{
+ 	 background-color: #2b82f4;
+   	 background-position: -52px -628px;
+	border-color: #66afe9;
+	outline: 0;
+	-webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, .6);
+	box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, .6);
+}
+
+.globalSearch+span:hover{
+	cursor: pointer;
+	background-color: #299cff;
+	background-position: -52px -653px;
+ }
+
+
+
+
+
+
+
+
+ .myNav{
+ 	margin-bottom: 0;
+ }
+ ul, ul li{
+    list-style: none;
+}
+.nav-bar {
+    text-align: right;
+    _width: 465px;
+    font-family: Arial, tahoma, verdana, "Microsoft YaHei", Simsun, sans-serif;
+    color: #4c4c4c;
+    font-size: 12px;
+}
+/* .nav-bar, .nav-bar a {
+    color: #4c4c4c;
+} */
+.language,.cui_service,.service_1180,.cui_wireless {
+    display: inline-block;
+    height: 15px;
+    line-height: 15px;
+    padding: 0 10px;
+    margin: 13px 0 0 0;
+    border-right: 1px solid #b2b2b2;
+}
+.language>a::before{
+	display:inline-block;
+	content: " ";
+	width:20px;
+	height:17px;
+	background-position: -64px 0;
+}
+.otherLanguage{
+	display: none;
+	position: absolute;
+
+}
+.language:hover .otherLanguage{
+	display: block;
+}
+/* 
+.language li {
+    position: relative;
+    z-index: 31;
+} 
+.language li .selected,.cui_service li .service_tel {
+    display: inline-block;
+    padding: 3px 3px 0 3px;
+    margin-top: -10px;
+    color: #4c4c4c;
+    font-size: 12px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    -moz-border-top-left-radius: 3px;
+    -moz-border-top-right-radius: 3px;
+}
+.language li .selected span, .cui_service li .service_tel span {
+    position: relative;
+    z-index: 112;
+    display: inline-block;
+    padding: 6px 5px 6px 9px;
+    *padding: 6px 5px 3px 9px;
+    margin: 1px 1px -2px;
+}
+.language li .selected em.ico-langen, .language li .selected em.ico-langgb, .language li .ico-global, .language li .selected em.ico-langhant {
+    display: inline-block;
+    width: 19px;
+    height: 13px;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+.language li .ico-global {
+    margin-top: -2px;
+    height: 16px;
+    background-position: -64px 0;
+}
+.language b.arrow, .cui_service b.arrow {
+    display: inline-block;
+    width: 9px;
+    height: 5px;
+    vertical-align: middle;
+    margin-left: 5px;
+    overflow: hidden;
+    background-position: -63px -260px;
+}
+
+.language_list a, .ico-langen, .ico-langgb, .ico-global, .ico-langhant, .cui_tel b, .myctrip b.arrow, .cui_myctrip, .cui_weibo, .cui_lang b, .cui_lang_hover b, #cui_lang_bottom a, .cui_myctrip_log .badge, .cui_myctrip_log .myctrip a b.arrow, .cui_ico_app, .cui_ico_chatarrow, .cui_ico_wechat, .cui_ico_tips, .cui_search button, .language b.arrow, .cui_service b.arrow {
+    background-image: url(../staticResource/pic/button.png);
+    background-repeat: no-repeat;
+}
+.drowndrop, .cui_nav .drowndrop {
+    display: none;
+    position: absolute;
+    z-index: 10;
+    top: 22px;
+    right: 0;
+    background: #fff;
+}
+.cui_wireless_box, .language_wrap, .service_wrap {
+    top: 17px;
+    *top: 14px;
+    left: 0;
+    right: auto;
+    height: auto;
+    background: #e4e7eb;
+    padding: 3px;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    border-top-right-radius: 3px;
+    -moz-border-bottom-left-radius: 3px;
+    -moz-border-bottom-right-radius: 3px;
+    -moz-border-top-right-radius: 3px;
+}
+
+.language_list {
+    border: 1px solid #b8b8b8;
+    background: #fff;
+    padding: 0 10px 0 0;
+    margin: 0;
+    width: 148px;
+}
+.language_list li.first {
+    border-top: 1px dotted #e4e7eb;
+    *float: left;
+    _margin-left: 4px;
+}
+.language_list li {
+    width: 140px;
+    margin: 0 9px;
+    line-height: 20px;
+    height: 20px;
+    padding: 4px 0;
+    border-bottom: 1px dotted #e4e7eb;
+}
+.language li {
+    position: relative;
+    z-index: 31;
+}
+.language li .language_current, .cui_service li .service_current, .language li .selected:hover, .cui_service li .service_tel:hover {
+    background: #e4e7eb;
+    text-decoration: none;
+    cursor: pointer;
+    color: #4c4c4c;
+    font-size: 12px;
+}
+
+.language a:hover b.arrow, .language_current b.arrow {
+    background-position: -0px -260px;
+}
+
+
+.language_list li.last {
+    border-bottom: none;
+}
+
+.language_list li a.language_hk, .language_list li a.language_big5, .language_list li a.language_gb, .language_list li a.language_en, .language_list li a.language_es, .language_list li a.language_de, .language_list li a.language_fr, .language_list li a.language_sg, .language_list li a.language_id, .language_list li a.language_my {
+    font: 12px/20px "Microsoft yahei", tahoma, arial, sans-serif;
+    color: #4c4c4c;
+    height: 20px;
+    padding-top: 0;
+}
+.language li .language_current span, .cui_service li .service_current span, .language li .selected:hover span, .cui_service li .service_tel:hover span {
+    background-color: #fff;
+    border: 1px solid #b8b8b8;
+    border-bottom: none;
+    margin: 0px;
+}
+.language_list li a {
+    font-family: Arial, tahoma, verdana, "Microsoft YaHei", Simsun, sans-serif;
+    white-space: nowrap;
+    display: block;
+    padding-left: 25px;
+    color: #4c4c4c;
+    height: 0;
+    padding-top: 20px;
+    line-height: 20px;
+    overflow: hidden;
+}
+.language_hk {
+    background-position: 0 -315px;
+    line-height: 22px;
+}
+.language_en {
+    background-position: -61px -467px;
+}
+.language_jap {
+    background-position: 0 -430px;
+}
+.language_korea {
+    background-position: 0 -449px;
+}
+.language_sg {
+    background-position: 0px -392px;
+}
+.language_id {
+    background-position: 0px -373px;
+}
+.language_my {
+    background-position: 0px -353px;
+}
+.language_th {
+    background-position: 0px -335px;
+}
+.language_fr {
+    background-position: -61px -503px;
+}
+.language_de {
+    background-position: -61px -485px;
+}
+.language_es {
+    background-position: -61px -520px;
+}
+.language_ru {
+    background-position: 0 -35px;
+}
+
+a, .cui_nav a, #base_ft a {
+    text-decoration: none;
+}
+a:hover, .cui_nav a:hover, #base_ft a:hover {
+    text-decoration: underline;
+}
+
+
+.nav-bar ul.service_1180 {
+    border-right: none;
+    padding-right: 0;
+}
+.cui_service li {
+    position: relative;
+    z-index: 30;
+}
+.cui_service li a {
+    color: #4c4c4c;
+    font-size: 12px;
+}
+.cui_service li .service_tel {
+    margin-left: -9px;
+    color: #4c4c4c;
+    font-size: 12px;
+}
+.cui_service li .service_tel span {
+    padding-left: 5px;
+}
+.service_telnum {
+    
+    font-style: normal;
+}
+
+.language li .language_current, .cui_service li .service_current, .language li .selected:hover, .cui_service li .service_tel:hover {
+    background: #e4e7eb;
+    text-decoration: none;
+    cursor: pointer;
+    color: #4c4c4c;
+    font-size: 12px;
+}
+.language li .language_current span, .cui_service li .service_current span, .language li .selected:hover span, .cui_service li .service_tel:hover span {
+    background-color: #fff;
+    border: 1px solid #b8b8b8;
+    border-bottom: none;
+    margin: 0px;
+}
+.cui_service a:hover b.arrow, .service_current b.arrow {
+    background-position: -0px -260px;
+}
+.service_wrap {
+    right: 0;
+    left: auto;
+    +right: -9px;
+}
+.service_list {
+    min-width: 158px;
+    padding: 0px 15px 3px 15px;
+    margin: 0;
+    border: solid 1px #b8b8b8;
+    background: #fff;
+}
+.service_list li dl {
+    margin: 0;
+    padding: 0;
+    line-height: 20px;
+    margin-top: 2px;
+    *margin-top: -5px;
+}
+.service_list li dd {
+    margin: 0;
+    padding: 0;
+    text-align: right;
+    line-height: 23px;
+    white-space: nowrap;
+}
+.nav-bar .cui_wireless {
+    border-right: none;
+    padding: 0;
+    margin-left: 13px;
+}
+.nav-bar .cui_wireless li {
+    float: left;
+    margin-right: 7px;
+}
+.cui_wireless li {
+    display: block;
+    width: 20px;
+    height: auto;
+}
+
+
+.nav-bar .cui_wireless a.wireless_link {
+    cursor: pointer;
+}
+a:hover, .cui_nav a:hover, #base_ft a:hover {
+    text-decoration: underline;
+}
+.cui_wireless .wireless, .cui_wireless_type dt, .cui_wireless_msg i, .cui_wireless_code, .cui_link_app i, .cui_input_close {
+    background: url(../staticResource/pic/button.png) 0 -9999em no-repeat;
+}
+.cui_ico_app {
+    height: 17px;
+    background-position: 0 -56px;
+}
+.cui_ico_app, .cui_ico_wechat, .cui_ico_wechat2 {
+    display: inline-block;
+    width: 20px;
+}
+.active .cui_ico_app, .active .cui_ico_app:hover, .cui_ico_app:hover {
+    background-position: 0 -78px;
+}
+
+.cui_wireless_box {
+    display: none;
+    position: absolute;
+    right: 0;
+    left: auto;
+    top: 46px;
+    width: 156px;
+    height: 218px;
+    z-index: 100;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    text-align: center;
+}
+.cui_wireless_box .cui_ico_chatarrow {
+    position: absolute;
+    z-index: 9;
+    right: 8px;
+    top: -5px;
+}
+.cui_ico_chatarrow {
+    width: 13px;
+    height: 9px;
+    background-position: 0 -271px;
+}
+.language_list a, .ico-langen, .ico-langgb, .ico-global, .ico-langhant, .cui_tel b, .myctrip b.arrow, .cui_myctrip, .cui_weibo, .cui_lang b, .cui_lang_hover b, #cui_lang_bottom a, .cui_myctrip_log .badge, .cui_myctrip_log .myctrip a b.arrow, .cui_ico_app, .cui_ico_chatarrow, .cui_ico_wechat, .cui_ico_tips, .cui_search button, .language b.arrow, .cui_service b.arrow {
+    background-image: url(../staticResource/pic/button.png);
+    background-repeat: no-repeat;
+}
+.cui_wireless_inbox {
+    position: relative;
+    width: 154px;
+    height: 216px;
+    border: 1px solid #b8b8b8;
+    background-color: #fff;
+    cursor: default;
+}
+.cui_wireless_type {
+    margin: 18px 0 0;
+    *zoom: 1;
+    text-align: center;
+}
+.cui_wireless_type dt {
+    margin-bottom: 15px;
+    color: #3882e5;
+    text-align: center;
+}
+.cui_wireless .wireless, .cui_wireless_type dt, .cui_wireless_msg i, .cui_wireless_code, .cui_link_app i, .cui_input_close {
+    background: url(../staticResource/pic/erweima.png) 0 -9999em no-repeat;
+}
+.cui_wireless_type dd {
+    margin: 0 auto 18px;
+    text-align: center;
+}
+.cui_wireless_type::after {
+    content: '\0020';
+    display: block;
+    clear: both;
+    height: 0;
+    overflow: hidden;
+}
+.cui_link_app {
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 38px;
+    line-height: 38px;
+    background-color: #f0f0f0;
+    color: #666;
+    text-align: center;
+}
+.cui_link_app i {
+    display: inline-block;
+    margin-left: 5px;
+    font-family: 'Simsun';
+    font-style: normal;
+}
+.cui_wireless .wireless, .cui_wireless_type dt, .cui_wireless_msg i, .cui_wireless_code, .cui_link_app i, .cui_input_close {
+    background: url(../staticResource/pic/erweima.png) 0 -9999em no-repeat;
+}
+.cui_link_app {
+    line-height: 38px;
+    color: #666;
+    text-align: center;
+}
+
+.nav-bar .cui_wireless a.wireless_nolink {
+    cursor: default;
+    position: relative;
+}
+.cui_ico_wechat {
+    height: 17px;
+    background-position: -20px -55px;
+    margin-top: 0;
+}
+.cui_ico_app, .cui_ico_wechat, .cui_ico_wechat2 {
+    display: inline-block;
+    width: 20px;
+}
+.cui_ico_wechat {
+    height: 17px;
+    background-position: -20px -55px;
+    margin-top: 0;
+}
+.cui_ico_app, .cui_ico_wechat, .cui_ico_wechat2 {
+    display: inline-block;
+    width: 20px;
+}
+
+#cui_nav {
+    font-family: 'microsoft yahei', Arial, sans-serif;
+    text-align: left;
+    font-size: 12px;
+    width: 100%;
+}
+.cui_nav_single .base_nav {
+    margin-bottom: 10px;
+}
+.base_nav {
+    width: 100%;
+    height: 40px;
+    background-color: #159e7c;
+    margin: 0 auto 54px;
+}
+.cui_nav {
+    position: relative;
+    z-index: 25;
+    min-width: 980px !important;
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 0;
+    height: 40px;
+    line-height: 40px;
+    font-size: 15px;
+    background-color: #159e7c;
+}
+.cui_hd, .cui_nav {
+    _width: 1180px;
+}
+*/

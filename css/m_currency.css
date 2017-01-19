@@ -1,0 +1,107 @@
+html, body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td, em, button{
+	margin:0;
+	padding:0;
+}
+body{
+	font: 400 14px/1.5 Tahoma,"Lucida Grande",Verdana,"Microsoft Yahei",STXihei,hei;
+	color: #333;
+	background: #f2f2f2;
+	margin: 0 auto;
+	overflow-x: hidden;
+}
+
+.search-index, body{
+	min-width: 320px;
+	max-width: 540px;
+}
+.m{
+	display: block;
+}
+.search-index{
+	box-sizing: border-box;
+}
+.search-index div span:after,#zh_content_navigation:before{
+    	background: url(/staticResource/pic/m_button.png) no-repeat;
+    	background-size: 104px 326px;
+}
+
+
+
+
+
+
+
+#ztui_head{
+	height: 3.21em;
+}
+#ztui_head_content{	
+	position: fixed;
+	top: 0;
+	left: 50%;
+	z-index: 12;
+	width: 100%;
+	height: 3.21em;
+	padding: 7px 3.57em 7px 8px;
+    	background-color: #F6F6F6;
+   	border-bottom: 1px solid #CCC;
+	border-top: 1px solid #CCC;
+	transform: translateX(-50%);
+	-webkit-transform:translateX(-50%);
+	background-color: #F6F6F6;
+}	
+
+#zh_content_title{
+	height: 2em;
+	padding: 0 5px;
+	border:1px solid #999;
+	border-radius: 5px;
+	line-height: 2em;
+	font-size: .86em;
+	background-color: #fff;
+    	color: #666;
+    	box-shadow: 0 2px 4px rgba(0,0,0,.2);
+}
+#zh_content_title span{
+	position: relative;
+	padding-left: 20px;
+	overflow: hidden;
+}
+#zh_content_title span:after{
+	content: "";
+	position: absolute;
+	top: -2px;
+    	left: 2px;
+    	width: 15px;
+    	height: 18px;
+    	overflow: hidden;
+    	background-position: -59px -276px;
+
+}
+#zh_content_navigation{
+    	width: 44px;
+    	height: 44px;
+ 	position: absolute;
+    	top: 0;
+    	right: 4px;
+}
+#zh_content_navigation:before{
+    	content: "";
+	position: absolute;
+	top: 4px;
+	left: 50%; 
+	margin-left: -10px;
+	width: 24px;
+	height: 26px;
+	background-position: -59px -193px;
+
+}
+#zh_content_navigation span{
+	position: absolute;
+	bottom: 1px;
+	left: 0;
+	width: 100%;
+	text-align: center;
+	font-size: .86em;
+	color: #2EAAE0;
+	white-space: nowrap;
+}
