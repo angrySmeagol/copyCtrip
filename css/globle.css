@@ -318,6 +318,10 @@
 	height: 100%;
 	
 }
+.banner-ul>li:first-child{
+	background-color: #0A56BB;
+	
+}
 .banner-ul>li>a{
 	display: block;
 	width: 100%;
@@ -411,6 +415,24 @@
 #banner-li-li-last1>a:after,#banner-li-li-last2>a:after,#banner-li-li-last3>a:after,#banner-li-li-last4>a:after,#banner-li-li-last5>a:after,#banner-li-li-last6>a:after,#banner-li-li-last7>a:after,#banner-li-li-last8>a:after,#banner-li-li-last9>a:after,#banner-li-li-last10>a:after,#banner-li-li-last11>a:after,#banner-li-li-last12>a:after{
 	border-right: 0;
 }
+
+.banner-li-left{
+	width: 100px;
+	line-height: 35px;
+	display: inline-block;
+	position: absolute;
+	right: 0;
+	cursor: pointer;
+}
+.banner-li-left:hover{
+
+	color: #74a8ed;
+}
+.banner-li-left>span{
+	color: #74a8ed;
+	padding-right: 3px;
+}
+
 #huoche-ul-left{
 	left:calc(21.6% - 98.9px);
 }
@@ -505,4 +527,97 @@
 }
 .banner-ul2>li>a:hover{
 	color: #74a8ed;
+}
+
+#banner-li-right{
+	background-color: #FF9913;
+	display: inline-block;
+	color: #fff;
+	padding:0 5px;
+	height: 40px;
+	position: relative;
+}
+#loginA{
+}
+#registerA{
+	text-align: right;
+}
+#banner-li-right>span{
+	color: #fff;
+}
+#banner-li-right>a{
+	display: inline-block;
+	width: 31%;
+	height: 20px;
+	line-height: 20px;
+	color: #fff;
+	text-decoration:none;
+	cursor:pointer;
+}
+.myZtravel{
+	position: relative;
+	cursor: pointer;
+}
+.myZtravel>i{
+	display: inline-block;
+	width: 0;
+	height: 0;
+	border-top: 4px solid #fff;
+	border-bottom: 0 none;
+	border-left: 4px solid transparent;
+	border-right: 4px solid transparent;
+	
+	position: relative;
+	top: -3px;
+	margin-left: 3px;
+	transition: transform 0.5s ease 0s;
+	-webkit-transition: transform 0.5s ease 0s;
+	-ms-transform: rotate(360deg);
+	-o-transform: rotate(360deg); 
+}
+#banner-li-right:hover .loginBlock{
+	display: block;
+}
+#banner-li-right:hover .myZtravel>i{
+	border-bottom: 4px solid #fff;
+	border-left: 4px solid transparent;
+	border-right: 4px solid transparent;
+	border-top: 0 none;
+	transform: rotate(360deg);
+}
+.loginBlock{
+	display: none;
+	position: absolute;
+	top: 40px;
+	width: 100%;
+	left: 0;
+	height: 100px;
+	border: 1px solid #C0BFBF;
+	background-color: #fff;
+	border-bottom-right-radius: 3px;
+	border-bottom-left-radius: 3px;
+}
+.loginBlock button{
+	display: block;
+	margin: 10px 20px;
+	border:1px solid #d5790a;
+	background-color: #ffba14;
+	text-shadow: 1px 1px 0 #e57c00;
+	color: #fff;
+	font-size: 16px;
+	text-align:center;
+	font-weight: bold;
+	border-radius: 3px;
+	box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+	letter-spacing: 0.4em;
+	text-indent: 0.4em;
+	*text-indent: 0;
+	width:calc(100% - 42px);
+}
+.loginBlock button:hover{
+	background-color: #FF9913;
+}
+.loginBlock a{
+	margin: 0 0 0 20px;
+	font-size: 12px;
 }
