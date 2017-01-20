@@ -9,6 +9,17 @@
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 	<link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="./css/globle.css">
+	<script type="text/javascript">
+		window.onload=function(){
+			var imgs=document.getElementsByClassName("lunboPic");
+			for(var i=1,j=1;i<imgs.length;i++){
+				setTimeout(function(){
+					var src=imgs[j].dataset.src;
+					imgs[j++].src=src;
+				},500);
+			}
+		}
+	</script>
 </head>
 <body>
 	<div class="container">
@@ -347,7 +358,9 @@
 					</div>
 				</div>
 				
-				<script type="text/javascript" >(function(){var a=function(){this.init=function(){var c=this;var g=function(){var m=c.findActive();var k=c.findNext();var l=c.findPrevious();if(k.src.indexOf("lunboPic")==-1){c.load(k)}if(m){m.className="lunboPic"}if(k){k.className="lunboPic active"}var i=k.dataset.number;var j=m.dataset.number;var h=document.getElementsByClassName("lunbo-ul-li");h[j-1].className="lunbo-ul-li";h[i-1].className="lunbo-ul-li active"};var f;f=setInterval(g,5000);var d=document.getElementsByClassName("lunboBox")[0];d.addEventListener("mouseover",function(h){clearInterval(f)});d.addEventListener("mouseout",function(h){f=setInterval(g,5000)});var e=document.getElementsByClassName("lunboUl")[0].children[0];e.addEventListener("mouseover",function(m){var n=document.getElementsByClassName("lunboPic");var l=m.target||m.srcElement;var h=document.getElementsByClassName("lunbo-ul-li");if(l.nodeName.toLowerCase()=="li"){var j=l.dataset.number;var k=c.findActive();var i=k.dataset.number;if(n&&n[j-1].className!="lunboPic active"){k.className="lunboPic";h[i-1].className="lunbo-ul-li";h[j-1].className="lunbo-ul-li active"}if(n[j-1].src.indexOf("lunboPic")==-1){c.load(n[j-1])}n[j-1].className="lunboPic active"}else{return}})};this.findActive=function(){return document.getElementsByClassName("lunboPic active")[0]};this.findNext=function(){var e=document.getElementsByClassName("lunboPic");var c=0;for(var d=0;d<e.length;d++){if(e[d].className.indexOf("active")!=-1){if(d==8){c=0}else{c=d+1}}}return e[c]};this.findPrevious=function(){var e=document.getElementsByClassName("lunboPic");var c=0;for(var d=0;d<e.length;d++){if(e[d].className.indexOf("active")!=-1){if(d==0){c=8}else{c=d-1}}}return e[c]};this.load=function(c){var d=c.dataset.src;c.src=d}};var b=new a();b.init()}());</script>
+				<script type="text/javascript" src="./js/test.js">
+					(function(){var a=function(){this.init=function(){var c=this;var g=function(){var m=c.findActive();var k=c.findNext();var l=c.findPrevious();if(k.src.indexOf("lunboPic")==-1){c.load(k)}if(m){m.className="lunboPic"}if(k){k.className="lunboPic active"}var i=k.dataset.number;var j=m.dataset.number;var h=document.getElementsByClassName("lunbo-ul-li");h[j-1].className="lunbo-ul-li";h[i-1].className="lunbo-ul-li active"};var f;f=setInterval(g,5000);var d=document.getElementsByClassName("lunboBox")[0];d.addEventListener("mouseover",function(h){clearInterval(f)});d.addEventListener("mouseout",function(h){f=setInterval(g,5000)});var e=document.getElementsByClassName("lunboUl")[0].children[0];e.addEventListener("mouseover",function(m){var n=document.getElementsByClassName("lunboPic");var l=m.target||m.srcElement;var h=document.getElementsByClassName("lunbo-ul-li");if(l.nodeName.toLowerCase()=="li"){var j=l.dataset.number;var k=c.findActive();var i=k.dataset.number;if(n&&n[j-1].className!="lunboPic active"){k.className="lunboPic";h[i-1].className="lunbo-ul-li";h[j-1].className="lunbo-ul-li active"}if(n[j-1].src.indexOf("lunboPic")==-1){c.load(n[j-1])}n[j-1].className="lunboPic active"}else{return}})};this.findActive=function(){return document.getElementsByClassName("lunboPic active")[0]};this.findNext=function(){var e=document.getElementsByClassName("lunboPic");var c=0;for(var d=0;d<e.length;d++){if(e[d].className.indexOf("active")!=-1){if(d==8){c=0}else{c=d+1}}}return e[c]};this.findPrevious=function(){var e=document.getElementsByClassName("lunboPic");var c=0;for(var d=0;d<e.length;d++){if(e[d].className.indexOf("active")!=-1){if(d==0){c=8}else{c=d-1}}}return e[c]};this.load=function(c){var d=c.dataset.src;c.src=d}};var b=new a();b.init()}());
+				</script>
 			</div>
 			<div class="col-sm-12 col-xs-12 visible-sm visible-xs">phonelunbo</div>
 			<div class="col-lg-6 col-md-6 hidden-sm hidden-xs" id="searchBox" style="position:absolute;">sousuozhuti</div>
