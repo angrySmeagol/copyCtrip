@@ -621,3 +621,53 @@
 	margin: 0 0 0 20px;
 	font-size: 12px;
 }
+
+
+
+
+
+
+
+
+
+.lunboBox{
+	height: 340px;
+	overflow: hidden;
+	position: relative;
+}
+.lunboBox img{
+	margin-left: calc(-1090px + 50%);
+}
+.lunboPic{
+	display: none;
+}
+.lunboPic.active{
+	display: block;
+}
+.lunboUl{
+	width: 400px;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+.lunboUl>ul{
+	display: inline-block;
+}
+.lunboUl>ul>li{
+	display: inline-block;
+	margin: 0 4px;
+	width: 8px;
+	height: 13px;
+	border-radius: 7px;
+	border:2px solid #fff;
+	background-color: rgba(0,0,0,.2);
+	transition: background-color 0.3s ease 0s;
+}
+.lunboUl>ul>li:hover{
+	background-color:#fff;
+	transition: background-color 0.3s ease 0s;
+}
+.lunboUl>ul>li.active{
+	background-color:#fff;
+	transition: background-color 0.3s ease 0s;
+}
