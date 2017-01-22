@@ -11,13 +11,13 @@
 	<link rel="stylesheet" type="text/css" href="./css/globle.css">
 	<script type="text/javascript">
 		window.onload=function(){
-			var imgs=document.getElementsByClassName("lunboPic");
-			for(var i=1,j=1;i<imgs.length;i++){
-				setTimeout(function(){
-					var src=imgs[j].dataset.src;
-					imgs[j++].src=src;
-				},500);
-			}
+			(function(){
+				var imgs=document.getElementsByClassName("lunboPic");
+				for(var i=1;i<imgs.length;i++){
+					var src=imgs[i].dataset.src;
+					imgs[i].src=src;
+				}
+			}());
 		}
 	</script>
 </head>
