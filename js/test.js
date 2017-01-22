@@ -23,6 +23,7 @@
 			}else{
 				img1.addEventListener("load",function(){
 					timer=setInterval(start,5000);
+					img1.removeEventListener("load");
 				});
 			}
 			
