@@ -21,7 +21,9 @@
 			if(img1.dataset.status=="true"){
 				timer=setInterval(start,5000);
 			}else{
-				img1.addEventListener("load",function(){timer=setInterval(start,5000);});
+				img1.addEventListener("load",function(){
+					timer=setInterval(start,5000);
+				});
 			}
 			
 
