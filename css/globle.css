@@ -717,6 +717,7 @@
 	top: 0;
 	right: 0;
 	padding: 20px;
+	overflow: hidden;
 }
 
 .search-block-ul{
@@ -751,4 +752,26 @@
 	border-bottom: 0 none;
 	border-right: 2px solid transparent;
 	border-left: 2px solid transparent;
+}
+
+.search-block-block{
+	height: 236px;
+	padding-top: 10px;
+}
+.search-ul{
+	height: 45px;
+	margin: 0;
+	overflow: hidden;
+}
+.search-ul label{
+	font-size: 12px;
+	padding-right: 0;
+	padding-left: 0;
+}
+.search-ul option{
+	font-size: 12px;
+}
+.search-ul select{
+	padding-left: 0px;
+	font-size:12px;
 }
