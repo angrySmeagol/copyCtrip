@@ -776,3 +776,13 @@
 	padding-left: 0px;
 	font-size:12px;
 }
+.search-ul a{
+	font-size: 13px;
+	line-height: 30px;
+}
+.form-block{
+	display: none;
+}
+.form-block.active{
+	display: block;
+}

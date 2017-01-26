@@ -388,7 +388,7 @@
 							<li class="search-block-li">会场+团队房<i></i></li>
 						</ul>
 						<div class="search-block-block">
-							<form action="./php/hotel.php" method="get" role="form" class="form-horizontal">
+							<form action="./php/hotel.php" method="get" role="form" class="form-horizontal form-block active">
 								<div class="form-group search-ul">
 									<label for="destination" class="col-lg-2 col-md-2 control-label">目的地</label>
 									<div class="col-lg-10 col-md-10">
@@ -421,6 +421,103 @@
 									<label for="keyword" class="col-lg-2 col-md-2 control-label">关键词</label>
 									<div class="col-lg-10 col-md-10">
 										<input type="text" class="form-control" id="keyword" placeholder="（选填）酒店名/地标/商圈" name="keyword">
+									</div>
+								</div>
+								<div class="form-group search-ul">
+									<div class="col-lg-offset-8 col-md-offset-8 col-lg-4 col-md-4">
+									  	<button type="submit" class="btn btn-default">搜索</button>
+									</div>
+								</div>
+							</form>
+							<form action="./php/hotelInternational.php" method="get" role="form" class="form-horizontal form-block">
+								<div class="form-group search-ul">
+									<label for="destination" class="col-lg-2 col-md-2 control-label">目的地</label>
+									<div class="col-lg-10 col-md-10">
+										<input type="text" class="form-control" id="destination2" placeholder="城市/机场/地标/酒店" name="destination" >
+									</div>
+								</div>
+								<div class="form-group search-ul">
+									<label for="date-in" class="col-lg-2 col-md-2 control-label">入住日期</label>
+									<div class="col-lg-4 col-md-4">
+										<input type="text" class="form-control datepicker" id="check-in2" placeholder="" name="check-in">
+									</div>
+									<label for="date-out" class="col-lg-2 col-md-2 control-label">退房日期</label>
+									<div class="col-lg-4 col-md-4">
+										<input type="text" class="form-control datepicker" id="check-out2" placeholder="" name="check-out">
+									</div>
+								</div>
+								<div class="form-group search-ul">
+									<label for="hotel-star" class="col-lg-2 col-md-2 control-label ">每间住客数</label>
+									<div class="col-lg-4 col-md-4">
+										<select class="form-control" name="personCount">
+											<option  value="1">1成人</option>
+											<option selected="selected" value="2">2成人</option>
+											<option  value="3">3成人</option>
+											<option  value="4">4成人</option>
+											<option  value="5">5成人</option>
+											<option  value="6">6成人</option>
+											<option  value="7">7成人</option>
+											<option  value="8">8成人</option>
+										</select>
+									</div>
+									<div class="col-lg-4 col-md-4">
+										<select class="form-control" name="childrenCount">
+											<option selected="selected" value="0">0儿童</option>
+											<option  value="1">1儿童</option>
+											<option  value="2">2儿童</option>
+											<option  value="3">3儿童</option>
+										</select>
+									</div>
+								</div>
+								<div class="form-group search-ul">
+									<label for="keyword" class="col-lg-2 col-md-2 control-label">关键词</label>
+									<div class="col-lg-10 col-md-10">
+										<input type="text" class="form-control" id="keyword2" placeholder="(选填)酒店/地标" name="keyword">
+									</div>
+								</div>
+								<div class="form-group search-ul">
+									<div class="col-lg-offset-8 col-md-offset-8 col-lg-4 col-md-4">
+									  	<button type="submit" class="btn btn-default">搜索</button>
+									</div>
+								</div>
+							</form>
+							<form action="./php/hotelGroup.php" method="get" role="form" class="form-horizontal form-block">
+								<div class="form-group search-ul">
+									<label for="hotCity" class="col-lg-2 col-md-2 control-label">热门城市</label>
+									<div class="col-lg-10 col-md-10">
+										<a href="">上海</a>
+										<a href="">广州</a>
+										<a href="">深圳</a>
+										<a href="">北京</a>
+										<a href="">成都</a>
+										<a href="">杭州</a>
+										<a href="">苏州</a>
+										<a href="">青岛</a>
+										<a href="">厦门</a>
+										<a href="">三亚</a>
+									</div>
+								</div>
+								<div class="form-group search-ul">
+									<label for="hotGroup" class="col-lg-2 col-md-2 control-label">热门团购</label>
+									<div class="col-lg-10 col-md-10">
+										<a href="">度假公寓</a>
+										<a href="">别墅轰趴</a>
+										<a href="">住店游玩</a>
+										<a href="">情侣酒店</a>
+										<a href="">火车票专享</a>
+									</div>
+								</div>
+								<div class="form-group search-ul">
+									<label for="destination" class="col-lg-2 col-md-2 control-label">目的地</label>
+									<div class="col-lg-10 col-md-10">
+										<input type="text" class="form-control" id="destination2" placeholder="中文/拼音/简拼" name="destination" >
+									</div>
+								</div>
+								
+								<div class="form-group search-ul">
+									<label for="keyword" class="col-lg-2 col-md-2 control-label">关键词</label>
+									<div class="col-lg-10 col-md-10">
+										<input type="text" class="form-control" id="keyword2" placeholder="(选填)商圈/景区/酒店品牌/酒店名称/关键字" name="keyword">
 									</div>
 								</div>
 								<div class="form-group search-ul">
