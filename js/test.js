@@ -7,7 +7,7 @@
 				var next=self.findNext();
 				var previous=self.findPrevious();
 
-				if(next.src!=next.dataset.src) self.load(next);
+				if(next.src.indexOf(next.dataset.src.substr(1))==-1) self.load(next);
 				if(current) current.className="lunboPic";
 				if(next) next.className="lunboPic active";
 				var nextIndex=next.dataset.number;
