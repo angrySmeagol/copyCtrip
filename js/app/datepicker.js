@@ -2,6 +2,21 @@ $(function() {
 	
 	setPicker($("#check-in"),$("#check-out"));
 	setPicker($("#check-in2"),$("#check-out2"));
+	setOnePicker($("#check-in3"));
+
+	
+	function setOnePicker(input){
+		var inputDom=input;
+		var today=new Date();
+		var tomorrow=new Date(today.valueOf() +86400000);
+
+		inputDom.datepicker({
+			numberOfMonths: 2
+		});
+		inputDom.datepicker('option', 'minDate', '+0d');
+		inputDom.datepicker('option', 'maxDate', '+2m');
+		inputDom[0].value=today.toLocaleDateString();
+	}
 	function setPicker(inputIn,inputOut){
 		var today=new Date();
 		var tomorrow=new Date(today.valueOf() +86400000);

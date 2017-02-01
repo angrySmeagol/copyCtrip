@@ -371,7 +371,7 @@
 			<div class="col-lg-6 col-md-6 hidden-sm hidden-xs" style="position:absolute;">
 				<div class="searchBoxs">
 					<ul class="list-unstyled searchBoxs-ul">
-						<li class="searchBoxs-li"><b>酒店</b></li>
+						<li class="searchBoxs-li active"><b>酒店</b></li>
 						<li class="searchBoxs-li"><b>机票</b></li>
 						<li class="searchBoxs-li"><b>自由行</b></li>
 						<li class="searchBoxs-li"><b>旅游</b></li>
@@ -518,6 +518,101 @@
 									<label for="keyword" class="col-lg-2 col-md-2 control-label">关键词</label>
 									<div class="col-lg-10 col-md-10">
 										<input type="text" class="form-control" id="keyword2" placeholder="(选填)商圈/景区/酒店品牌/酒店名称/关键字" name="keyword">
+									</div>
+								</div>
+								<div class="form-group search-ul">
+									<div class="col-lg-offset-8 col-md-offset-8 col-lg-4 col-md-4">
+									  	<button type="submit" class="btn btn-default">搜索</button>
+									</div>
+								</div>
+							</form>
+							<form action="./php/sceneryHotel.php" method="get" role="form" class="form-horizontal form-block">
+								<div class="form-group search-ul">
+									<label for="destination" class="col-lg-2 col-md-2 control-label">目的地</label>
+									<div class="col-lg-10 col-md-10">
+										<input type="text" class="form-control" id="destination" placeholder="中文/拼音" name="destination" >
+									</div>
+								</div>
+								<div class="form-group search-ul">
+									<label for="date-in" class="col-lg-2 col-md-2 control-label">入住日期</label>
+									<div class="col-lg-4 col-md-4">
+										<input type="text" class="form-control datepicker" id="check-in3" placeholder="" name="check-in">
+									</div>
+									<label for="date-out" class="col-lg-2 col-md-2 control-label">游玩天数</label>
+									<div class="col-lg-4 col-md-4">
+										<select class="form-control" name="travelDdays">
+											<option selected="selected" value="0">不限</option>
+											<option value="1">2天1晚</option>
+											<option value="2">3天2晚</option>
+											<option value="3">4天3晚</option>
+											<option value="4">5天4晚</option>
+											<option value="5">6天5晚</option>
+										</select>
+									</div>
+								</div>
+								<div class="form-group search-ul">
+									<label for="hotel-star" class="col-lg-2 col-md-2 control-label ">酒店级别</label>
+									<div class="col-lg-4 col-md-4">
+										<select class="form-control" name="hotel-star">
+											<option selected="selected" value="0">不限</option>
+											<option value="5">五星级/豪华</option>
+											<option value="4">四星级/高档</option>
+											<option value="3">三星级/舒适</option>
+											<option value="2">二星级以下/经济</option>
+										</select>
+									</div>
+								</div>
+								<div class="form-group search-ul">
+									<label for="keyword" class="col-lg-2 col-md-2 control-label">关键词</label>
+									<div class="col-lg-10 col-md-10">
+										<input type="text" class="form-control" id="keyword" placeholder="酒店名称、景点名称、主题、人群…" name="keyword">
+									</div>
+								</div>
+								<div class="form-group search-ul">
+									<div class="col-lg-offset-8 col-md-offset-8 col-lg-4 col-md-4">
+									  	<button type="submit" class="btn btn-default">搜索酒店+景点</button>
+									</div>
+								</div>
+							</form>
+							<form action="./php/teamHotel.php" method="get" role="form" class="form-horizontal form-block">
+								<div class="form-group search-ul">
+									<label for="destination" class="col-lg-2 col-md-2 control-label">活动城市</label>
+									<div class="col-lg-10 col-md-10">
+										<input type="text" class="form-control" id="destination" placeholder="中文/拼音" name="destination" >
+									</div>
+								</div>
+								<div class="form-group search-ul">
+									<label for="date-out" class="col-lg-2 col-md-2 control-label">活动人数</label>
+									<div class="col-lg-4 col-md-4">
+										<select class="form-control" name="personsNumber">
+											<option selected="selected" value="0">不限</option>
+											<option value="1">50人以下</option>
+											<option value="2">50~100人</option>
+											<option value="3">101~200人</option>
+											<option value="4">201~300人</option>
+											<option value="5">301~500人</option>
+											<option value="6">500人以上</option>
+										</select>
+									</div>
+								</div>
+								<div class="form-group search-ul">
+									<label for="date-out" class="col-lg-2 col-md-2 control-label">场地价格</label>
+									<div class="col-lg-4 col-md-4">
+										<select class="form-control" name="sitePrice">
+											<option selected="selected" value="0">不限</option>
+											<option value="1">3千以下</option>
+											<option value="2">3~5千</option>
+											<option value="3">5千~1万</option>
+											<option value="4">1~2万</option>
+											<option value="5">2~3万</option>
+											<option value="6">3万以上</option>
+										</select>
+									</div>
+								</div>
+								<div class="form-group search-ul">
+									<label for="keyword" class="col-lg-2 col-md-2 control-label">关键词</label>
+									<div class="col-lg-10 col-md-10">
+										<input type="text" class="form-control" id="keyword" placeholder="酒店名称、景点名称、主题、人群…" name="keyword">
 									</div>
 								</div>
 								<div class="form-group search-ul">

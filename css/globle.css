@@ -680,6 +680,9 @@
 	background-color: #fff;
 	position: relative;
 }
+.searchBoxs li{
+	cursor: pointer;
+}
 .searchBoxs-ul{
 	width: 100px;
 	margin: 0;
@@ -689,6 +692,11 @@
 	border-left: 4px solid #2577e3;
 	padding: 0 18px;
 	color: #fff;
+}
+.searchBoxs-li.active{
+	border-left: 4px solid #ff9915;
+	color: #2577e3;
+	background-color: #fff;
 }
 .searchBoxs-li>b{
 	display: block;
